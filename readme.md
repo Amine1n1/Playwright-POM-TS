@@ -105,3 +105,5 @@ class LoginPage extends BasePage {
 ### License
 
 MIT – use it, fork it, star it ⭐️, enjoy!
+
+![Playwright CI](https://github.com/Amine1n1/Playwright-POM-TS/actions/workflows/playwright.yml/badge.svg?branch=main)

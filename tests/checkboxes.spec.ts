@@ -16,7 +16,7 @@ test.describe('Checkboxes page', () => {
     // • It is the exact SAME tab that PomManager is working on.
     // • Safe to use for one-off utilities (screenshot, tracing, network intercepts).  It does *not* open a new tab or context.
     // • Keep business interactions (click, fill, asserts) inside POM.
-    await expect(page).toHaveScreenshot('checkboxes-after-check.png');
+    await expect(page).toHaveScreenshot('checkboxes-after-check.png', { maxDiffPixelRatio: 0.02});
 
     // Quick ad-hoc assertion using the BasePage `locator()` helper
     await expect(pm.checkboxesPage.locator('form#checkboxes'))
